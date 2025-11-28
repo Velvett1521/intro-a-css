@@ -10,4 +10,99 @@ h1 {
 
 p {
     font-size: 18px;
+    color: blue;
+}
+
+.mi_clase {
+    background-color: yellow;
+}
+
+#mi_id {
+    font-size: 24px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a[title] {
+    text-decoration: underline;
+}
+
+a[href="https://google.com"] {
+    color: red;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+article > p {
+    color: green;
+}
+
+.inline_ejemplo {
+    display: inline;
+    background-color: lightgray;
+}
+
+.block_ejemplo {
+    display: block;
+    background-color: lightblue;
+    margin: 10px 0;
+}
+
+.inline_block-ejemplo {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: lightcoral;
+    margin: 5px;
+}
+
+.flex_container {
+    display: flex;
+    gap: 10px;
+    background-color: #eee;
+    padding: 10px;
+}
+
+.flex_item {
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.grid_item {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+.error_message {
+    display: none;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
 }
