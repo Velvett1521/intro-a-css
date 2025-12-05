@@ -116,7 +116,7 @@ button {
     border-radius: 5px;
 }
 
-.propiedades-basicas {
+.propiedades_basicas {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -131,40 +131,40 @@ button {
     text-align: center;
 }
 
-.color-ejemplo {
+.color_ejemplo {
     color: blue;
     background-color: #2c2c54;
     border: 2px solid blue;
 }
 
-.bgcolor-ejemplo {
+.bgcolor_ejemplo {
     background-color: lightgreen;
     color: #000;
     border: 2px solid green;
 }
 
-.fontsize-ejemplo {
+.fontsize_ejemplo {
     font-size: 1.5em;
     background-color: #5f27cd;
     color: white;
     border: 2px solid #341f97;
 }
 
-.fontfamily-ejemplo {
+.fontfamily_ejemplo {
     font-family: 'Courier New', monospace;
     background-color: #ff9f43;
     color: #000;
     border: 2px solid #ff9f43;
 }
 
-.textalign-ejemplo {
+.textalign_ejemplo {
     text-align: center;
     background-color: #54a0ff;
     color: white;
     border: 2px solid #2e86de;
 }
 
-.box-model-ejemplo {
+.box_model_ejemplo {
     width: 300px;
     padding: 20px;
     border: 5px solid lightblue;
@@ -172,7 +172,7 @@ button {
     background-color: #2c2c54;
 }
 
-.box-sizing-container {
+.box_sizing_container {
     display: flex;
     gap: 30px;
     margin: 20px 0;
@@ -186,14 +186,91 @@ button {
     text-align: center;
 }
 
-.content-box {
+.content_box {
     background-color: rgba(255, 107, 107, 0.2);
     border-color: #ff6b6b;
     box-sizing: content-box;
 }
 
-.border-box {
+.border_box {
     background-color: rgba(29, 209, 161, 0.2);
     border-color: #1dd1a1;
     box-sizing: border-box;
+}
+
+.herencia_contenedor {
+    background-color: #3a3560;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.heredable {
+    color: #ffcc00;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    background-color: #2a2548;
+    border-radius: 5px;
+}
+
+.no_heredable_contenedor {
+    background-color: #3a3560;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.no_heredable {
+    border: 3px solid #ff6b6b;
+    padding: 25px;
+    background-color: #2a2548;
+    margin: 15px 0;
+}
+
+.hereda_forzado {
+    border: inherit;
+    padding: inherit;
+    margin: 10px 0;
+    background-color: rgba(255, 107, 107, 0.1);
+}
+
+.estilo_propio {
+    border: 2px solid #1dd1a1;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: rgba(29, 209, 161, 0.1);
+}
+
+.control_herencia {
+    background-color: #3a3560;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.control_contenedor {
+    color: #ff9ff3;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #2a2548;
+    padding: 15px;
+    border-left: 5px solid #ff9ff3;
+}
+
+.hereda_todo {
+    color: inherit;
+    font-size: inherit;
+}
+
+.usa_initial {
+    font-size: initial;
+    font-weight: initial;
+    color: #54a0ff;
+}
+
+.usa_inherit {
+    color: inherit;
+    font-weight: inherit;
 }

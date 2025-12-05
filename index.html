@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF_8">
     <title>página con CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,24 +20,24 @@
     <hr>
 
     <h2>Propiedades Básicas de CSS</h2>
-    <div class="propiedades-basicas">
-        <div class="propiedad color-ejemplo">
+    <div class="propiedades_basicas">
+        <div class="propiedad color_ejemplo">
             <h3>color</h3>
             <p>Texto azul</p>
         </div>
-        <div class="propiedad bgcolor-ejemplo">
+        <div class="propiedad bgcolor_ejemplo">
             <h3>background-color</h3>
             <p>Fondo verde</p>
         </div>
-        <div class="propiedad fontsize-ejemplo">
+        <div class="propiedad fontsize_ejemplo">
             <h3>font-size</h3>
             <p>Texto grande</p>
         </div>
-        <div class="propiedad fontfamily-ejemplo">
+        <div class="propiedad fontfamily_ejemplo">
             <h3>font-family</h3>
             <p>Fuente diferente</p>
         </div>
-        <div class="propiedad textalign-ejemplo">
+        <div class="propiedad textalign_ejemplo">
             <h3>text-align</h3>
             <p>Texto centrado</p>
         </div>
@@ -46,19 +46,19 @@
     <hr>
 
     <h2>Box Model</h2>
-    <div class="box-model-ejemplo">
+    <div class="box_model_ejemplo">
         <p>Este párrafo tiene padding, border y margin.</p>
     </div>
 
     <hr>
 
-    <h2>box-sizing</h2>
-    <div class="box-sizing-container">
-        <div class="caja content-box">
+    <h2>box_sizing</h2>
+    <div class="box_sizing_container">
+        <div class="caja content_box">
             <p>content-box</p>
             <p>Ancho: 200px</p>
         </div>
-        <div class="caja border-box">
+        <div class="caja border_box">
             <p>border-box</p>
             <p>Ancho: 200px</p>
         </div>
@@ -70,8 +70,8 @@
     <div class="inline_ejemplo">Inline 1</div>
     <div class="inline_ejemplo">Inline 2</div>
     <div class="block_ejemplo">Soy un elemento block</div>
-    <div class="inline_block_ejemplo">Inline_block 1</div>
-    <div class="inline_block_ejemplo">Inline_block 2</div>
+    <div class="inline_block_ejemplo">Inline-block 1</div>
+    <div class="inline_block_ejemplo">Inline-block 2</div>
 
     <hr>
 
@@ -98,6 +98,38 @@
 
     <h2>hover</h2>
     <button>Pasar el mouse</button>
+
+    <hr>
+
+    <h2>Herencia en CSS</h2>
+    
+    <div class="herencia_contenedor">
+        <h3>Propiedades heredadas</h3>
+        <div class="heredable">
+            <p>Color, fuente y tamaño del contenedor</p>
+            <span>Hereda practicamente lo mismo pero con otros valores</span>
+            <div>
+                <p>Este texto igual hereda</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="no_heredable_contenedor">
+        <h3>Propiedades que NO se heredan</h3>
+        <div class="no_heredable">
+            <p class="hereda_forzado">Tiene inherit para border y padding.</p>
+            <p class="estilo_propio">Aqui agarra valores propios</p>
+        </div>
+    </div>
+
+    <div class="control_herencia">
+        <h3>Ejemplos pa que amarre</h3>
+        <div class="control_contenedor">
+            <p class="hereda_todo">Yo heredo normal</p>
+            <p class="usa_initial">Yo heredo forzadamente (initial)</p>
+            <p class="usa_inherit">Yo tengo valores propios (inherit)</p>
+        </div>
+    </div>
 
     <hr>
 
