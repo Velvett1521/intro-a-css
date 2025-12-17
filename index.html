@@ -7,6 +7,42 @@
 </head>
 <body>
 
+    <nav class="main_navbar">
+        <div class="nav_logo">
+            <span class="logo_text">Navbar</span>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#propiedades-basicas" class="nav_link">Propiedades</a>
+            <a href="#box-model" class="nav_link">Box Model</a>
+            <a href="#display" class="nav_link">Display</a>
+            <a href="#flexbox" class="nav_link">Flexbox</a>
+            <a href="#grid" class="nav_link">Grid</a>
+            <a href="#herencia" class="nav_link">Herencia</a>
+            <a href="#flexbox-avanzado" class="nav_link">Flex Avanzado</a>
+            <a href="#position" class="nav_link">Position</a>
+            <a href="#flex-wrap" class="nav_link">Flex Wrap</a>
+            <a href="#flex-props" class="nav_link">Flex Props</a>
+            <a href="#centrado" class="nav_link">Centrado</a>
+            <a href="#distribucion" class="nav_link">Distribución</a>
+            <a href="#align-self" class="nav_link">Align Self</a>
+            <a href="#multilinea" class="nav_link">Multilínea</a>
+            <a href="#combinacion" class="nav_link">Combinación</a>
+            <a href="#position-demo" class="nav_link">Position Demo</a>
+            <a href="#z-index" class="nav_link">Z-index</a>
+        </div>
+        
+        <div class="nav_actions">
+            <a href="#mi_id" class="nav_top">↑ Inicio</a>
+        </div>
+    </nav>
+
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
+
     <h1 id="mi_id">Ola :3</h1>
 
     <p>Esta es una página de práctica para usar HTML y CSS según lo visto en campus y conocimiento previo</p>
@@ -19,7 +55,7 @@
 
     <hr>
 
-    <h2>Propiedades Básicas de CSS</h2>
+    <h2 id="propiedades-basicas">Propiedades Básicas de CSS</h2>
     <div class="propiedades_basicas">
         <div class="propiedad color_ejemplo">
             <h3>color</h3>
@@ -45,7 +81,7 @@
 
     <hr>
 
-    <h2>Box Model</h2>
+    <h2 id="box-model">Box Model</h2>
     <div class="box_model_ejemplo">
         <p>Este párrafo tiene padding, border y margin.</p>
     </div>
@@ -66,7 +102,7 @@
 
     <hr>
 
-    <h2>Display</h2>
+    <h2 id="display">Display</h2>
     <div class="inline_ejemplo">Inline 1</div>
     <div class="inline_ejemplo">Inline 2</div>
     <div class="block_ejemplo">Soy un elemento block</div>
@@ -75,7 +111,7 @@
 
     <hr>
 
-    <h2>Flexbox</h2>
+    <h2 id="flexbox">Flexbox</h2>
     <div class="flex_container">
         <div class="flex_item">Flex 1</div>
         <div class="flex_item">Flex 2</div>
@@ -84,7 +120,7 @@
 
     <hr>
 
-    <h2>Grid</h2>
+    <h2 id="grid">Grid</h2>
     <div class="grid_container">
         <div class="grid_item">Grid 1</div>
         <div class="grid_item">Grid 2</div>
@@ -101,7 +137,7 @@
 
     <hr>
 
-    <h2>Herencia en CSS</h2>
+    <h2 id="herencia">Herencia en CSS</h2>
     
     <div class="herencia_contenedor">
         <h3>Propiedades heredadas</h3>
@@ -138,7 +174,7 @@
 
     <hr>
 
-<h2>Flexbox avanzado (align-items, justify-content)</h2>
+<h2 id="flexbox-avanzado">Flexbox avanzado (align-items, justify-content)</h2>
 <div class="flexbox_avanzado_container">
     <img src="img/miku.jpg" alt="Miku">
     <img src="img/teto.webp" alt="Teto">
@@ -147,7 +183,7 @@
 
 <hr>
 
-    <h2>Position: relative, absolute, fixed, sticky</h2>
+    <h2 id="position">Position: relative, absolute, fixed, sticky</h2>
     <div class="position_wrapper">
         <div class="position_header position_sticky">sticky (se pega arriba al hacer scroll)</div>
         <div class="position_container">
@@ -168,11 +204,11 @@
         </div>
     </div>
     
-    <div class="position_fixed">Botón Fixed</div> <!-- FUERA del position_container -->
+    <div class="position_fixed">Botón Fixed</div>
 
 <hr>
 
-<h2>Flex-wrap y gap</h2>
+<h2 id="flex-wrap">Flex-wrap y gap</h2>
 <div class="flex_wrap_container">
     <img src="img/caballerito.webp" alt="El Jolou nai">
     <img src="img/Hornet.webp" alt="Hornet">
@@ -184,7 +220,7 @@
     <img src="img/Bestiary_mighty_zote_full.webp" alt="Principe Gris Zote">
 </div>
 
-<h2>Flex-grow, flex-shrink, flex-basis</h2>
+<h2 id="flex-props">Flex-grow, flex-shrink, flex-basis</h2>
 <div class="flex_props_container">
     <img src="img/sandrone.webp" alt="Grow" class="flex_prop_img grow_item">
     <img src="img/FatuiColumbina.webp" alt="Shrink" class="flex_prop_img shrink_item">
@@ -193,14 +229,14 @@
 
 <hr>
 
-<h2>Alineación con Flexbox - Centrado Perfecto</h2>
+<h2 id="centrado">Alineación con Flexbox - Centrado Perfecto</h2>
 <div class="centrado_perfecto">
     <img src="img/miku.jpg" alt="Miku centrada">
 </div>
 
 <hr>
 
-<h2>Alineación con Flexbox - Distribución Uniforme</h2>
+<h2 id="distribucion">Alineación con Flexbox - Distribución Uniforme</h2>
 <div class="distribucion_uniforme">
     <div class="item">Inicio</div>
     <div class="item">Centro</div>
@@ -209,7 +245,7 @@
 
 <hr>
 
-<h2>Alineación con Flexbox - align-self</h2>
+<h2 id="align-self">Alineación con Flexbox - align-self</h2>
 <div class="align_self_ejemplo">
     <div class="item">Normal</div>
     <div class="item especial">Especial (align-self: flex-end)</div>
@@ -218,7 +254,7 @@
 
 <hr>
 
-<h2>Alineación con Flexbox - Multilínea (align-content)</h2>
+<h2 id="multilinea">Alineación con Flexbox - Multilínea (align-content)</h2>
 <div class="multilinea_ejemplo">
     <div class="item">1</div>
     <div class="item">2</div>
@@ -230,7 +266,7 @@
 
 <hr>
 
-<h2>Alineación con Flexbox - Combinación Completa</h2>
+<h2 id="combinacion">Alineación con Flexbox - Combinación Completa</h2>
 <div class="combinacion_completa">
     <div class="item">A</div>
     <div class="item">B</div>
@@ -238,6 +274,26 @@
     <div class="item">D</div>
     <div class="item">E</div>
     <div class="item">F</div>
+</div>
+
+<hr>
+
+<h2 id="position-demo">Position - Demostración Completa</h2>
+<div class="position_demo_container">
+    <div class="pos_demo pos_static">Static (por defecto)</div>
+    <div class="pos_demo pos_relative">Relative (top: 20px, left: 40px)</div>
+    <div class="pos_demo pos_absolute">Absolute (top: 0, right: 0)</div>
+    <div class="pos_demo pos_fixed">Fixed (bottom: 20px, left: 20px)</div>
+    <div class="pos_demo pos_sticky">Sticky (top: 50px)</div>
+</div>
+
+<hr>
+
+<h2 id="z-index">Z-index - Control de Capas</h2>
+<div class="zindex_demo">
+    <div class="layer layer1">Capa 1 (z-index: 1)</div>
+    <div class="layer layer2">Capa 2 (z-index: 2)</div>
+    <div class="layer layer3">Capa 3 (z-index: 3)</div>
 </div>
 
 </body>
