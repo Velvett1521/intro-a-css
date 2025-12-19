@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>página con CSS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -37,264 +38,261 @@
         </div>
     </nav>
 
-    <style>
-        body {
-            padding-top: 60px;
-        }
-    </style>
+    <div class="container">
+        <h1 id="mi_id">Ola :3</h1>
 
-    <h1 id="mi_id">Ola :3</h1>
+        <p>Esta es una página de práctica para usar HTML y CSS según lo visto en campus y conocimiento previo</p>
 
-    <p>Esta es una página de práctica para usar HTML y CSS según lo visto en campus y conocimiento previo</p>
+        <p class="mi_clase">
+            fondo amarillo sólido.
+        </p>
 
-    <p class="mi_clase">
-        fondo amarillo sólido.
-    </p>
+        <a href="https://google.com" title="Ir a Google">Este es un enlace con selectores de atributo.</a>
 
-    <a href="https://google.com" title="Ir a Google">Este es un enlace con selectores de atributo.</a>
+        <hr>
 
-    <hr>
-
-    <h2 id="propiedades-basicas">Propiedades Básicas de CSS</h2>
-    <div class="propiedades_basicas">
-        <div class="propiedad color_ejemplo">
-            <h3>color</h3>
-            <p>Texto azul</p>
-        </div>
-        <div class="propiedad bgcolor_ejemplo">
-            <h3>background-color</h3>
-            <p>Fondo verde</p>
-        </div>
-        <div class="propiedad fontsize_ejemplo">
-            <h3>font-size</h3>
-            <p>Texto grande</p>
-        </div>
-        <div class="propiedad fontfamily_ejemplo">
-            <h3>font-family</h3>
-            <p>Fuente diferente</p>
-        </div>
-        <div class="propiedad textalign_ejemplo">
-            <h3>text-align</h3>
-            <p>Texto centrado</p>
-        </div>
-    </div>
-
-    <hr>
-
-    <h2 id="box-model">Box Model</h2>
-    <div class="box_model_ejemplo">
-        <p>Este párrafo tiene padding, border y margin.</p>
-    </div>
-
-    <hr>
-
-    <h2>box_sizing</h2>
-    <div class="box_sizing_container">
-        <div class="caja content_box">
-            <p>content-box</p>
-            <p>Ancho: 200px</p>
-        </div>
-        <div class="caja border_box">
-            <p>border-box</p>
-            <p>Ancho: 200px</p>
-        </div>
-    </div>
-
-    <hr>
-
-    <h2 id="display">Display</h2>
-    <div class="inline_ejemplo">Inline 1</div>
-    <div class="inline_ejemplo">Inline 2</div>
-    <div class="block_ejemplo">Soy un elemento block</div>
-    <div class="inline_block_ejemplo">Inline-block 1</div>
-    <div class="inline_block_ejemplo">Inline-block 2</div>
-
-    <hr>
-
-    <h2 id="flexbox">Flexbox</h2>
-    <div class="flex_container">
-        <div class="flex_item">Flex 1</div>
-        <div class="flex_item">Flex 2</div>
-        <div class="flex_item">Flex 3</div>
-    </div>
-
-    <hr>
-
-    <h2 id="grid">Grid</h2>
-    <div class="grid_container">
-        <div class="grid_item">Grid 1</div>
-        <div class="grid_item">Grid 2</div>
-        <div class="grid_item">Grid 3</div>
-        <div class="grid_item">Grid 4</div>
-        <div class="grid_item">Grid 5</div>
-        <div class="grid_item">Grid 6</div>
-    </div>
-
-    <hr>
-
-    <h2>hover</h2>
-    <button>Pasar el mouse</button>
-
-    <hr>
-
-    <h2 id="herencia">Herencia en CSS</h2>
-    
-    <div class="herencia_contenedor">
-        <h3>Propiedades heredadas</h3>
-        <div class="heredable">
-            <p>Color, fuente y tamaño del contenedor</p>
-            <span>Hereda practicamente lo mismo pero con otros valores</span>
-            <div>
-                <p>Este texto igual hereda</p>
+        <h2 id="propiedades-basicas">Propiedades Básicas de CSS</h2>
+        <div class="propiedades_basicas">
+            <div class="propiedad color_ejemplo">
+                <h3>color</h3>
+                <p>Texto azul</p>
+            </div>
+            <div class="propiedad bgcolor_ejemplo">
+                <h3>background-color</h3>
+                <p>Fondo verde</p>
+            </div>
+            <div class="propiedad fontsize_ejemplo">
+                <h3>font-size</h3>
+                <p>Texto grande</p>
+            </div>
+            <div class="propiedad fontfamily_ejemplo">
+                <h3>font-family</h3>
+                <p>Fuente diferente</p>
+            </div>
+            <div class="propiedad textalign_ejemplo">
+                <h3>text-align</h3>
+                <p>Texto centrado</p>
             </div>
         </div>
-    </div>
 
-    <div class="no_heredable_contenedor">
-        <h3>Propiedades que NO se heredan</h3>
-        <div class="no_heredable">
-            <p class="hereda_forzado">Tiene inherit para border y padding.</p>
-            <p class="estilo_propio">Aqui agarra valores propios</p>
+        <hr>
+
+        <h2 id="box-model">Box Model</h2>
+        <div class="box_model_ejemplo">
+            <p>Este párrafo tiene padding, border y margin.</p>
         </div>
-    </div>
 
-    <div class="control_herencia">
-        <h3>Ejemplos pa que amarre</h3>
-        <div class="control_contenedor">
-            <p class="hereda_todo">Yo heredo normal</p>
-            <p class="usa_initial">Yo heredo forzadamente (initial)</p>
-            <p class="usa_inherit">Yo tengo valores propios (inherit)</p>
-        </div>
-    </div>
+        <hr>
 
-    <hr>
-
-    <p class="error_message">Este mensaje está oculto con display none WASAAAAAA 👻</p>
-
-
-    <hr>
-
-<h2 id="flexbox-avanzado">Flexbox avanzado (align-items, justify-content)</h2>
-<div class="flexbox_avanzado_container">
-    <img src="img/miku.jpg" alt="Miku">
-    <img src="img/teto.webp" alt="Teto">
-    <img src="img/neru.jpg" alt="Neru">
-</div>
-
-<hr>
-
-    <h2 id="position">Position: relative, absolute, fixed, sticky</h2>
-    <div class="position_wrapper">
-        <div class="position_header position_sticky">sticky (se pega arriba al hacer scroll)</div>
-        <div class="position_container">
-            <div class="position_box position_static">static (normal)</div>
-            <div class="position_box position_relative">relative (movido 20px/30px)</div>
-            <div class="position_box position_absolute">absolute (top:50px)</div>
-            <div class="position_content">
-                <p>Contenido largo para poder scrollear..</p>
-                <p>Más contenido para probar...</p>
-                <p>Continua we...</p>
-                <p>Ya se puso el sticky?.</p>
-                <p>El botón fixed está abajo a la derecha por cierto.</p>
-                <p>WASAAAAAA</p>
-                <p>Miau</p>
-                <p>???????????</p>
-                <p>Fin.</p>
+        <h2>box_sizing</h2>
+        <div class="box_sizing_container">
+            <div class="caja content_box">
+                <p>content-box</p>
+                <p>Ancho: 200px</p>
+            </div>
+            <div class="caja border_box">
+                <p>border-box</p>
+                <p>Ancho: 200px</p>
             </div>
         </div>
+
+        <hr>
+
+        <h2 id="display">Display</h2>
+        <div class="display_container">
+            <div class="inline_ejemplo">Inline 1</div>
+            <div class="inline_ejemplo">Inline 2</div>
+            <div class="block_ejemplo">Soy un elemento block</div>
+            <div class="inline_block_ejemplo">Inline-block 1</div>
+            <div class="inline_block_ejemplo">Inline-block 2</div>
+        </div>
+
+        <hr>
+
+        <h2 id="flexbox">Flexbox</h2>
+        <div class="flex_container">
+            <div class="flex_item">Flex 1</div>
+            <div class="flex_item">Flex 2</div>
+            <div class="flex_item">Flex 3</div>
+        </div>
+
+        <hr>
+
+        <h2 id="grid">Grid</h2>
+        <div class="grid_container">
+            <div class="grid_item">Grid 1</div>
+            <div class="grid_item">Grid 2</div>
+            <div class="grid_item">Grid 3</div>
+            <div class="grid_item">Grid 4</div>
+            <div class="grid_item">Grid 5</div>
+            <div class="grid_item">Grid 6</div>
+        </div>
+
+        <hr>
+
+        <h2>hover</h2>
+        <button>Pasar el mouse</button>
+
+        <hr>
+
+        <h2 id="herencia">Herencia en CSS</h2>
+        
+        <div class="herencia_contenedor">
+            <h3>Propiedades heredadas</h3>
+            <div class="heredable">
+                <p>Color, fuente y tamaño del contenedor</p>
+                <span>Hereda practicamente lo mismo pero con otros valores</span>
+                <div>
+                    <p>Este texto igual hereda</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="no_heredable_contenedor">
+            <h3>Propiedades que NO se heredan</h3>
+            <div class="no_heredable">
+                <p class="hereda_forzado">Tiene inherit para border y padding.</p>
+                <p class="estilo_propio">Aqui agarra valores propios</p>
+            </div>
+        </div>
+
+        <div class="control_herencia">
+            <h3>Ejemplos pa que amarre</h3>
+            <div class="control_contenedor">
+                <p class="hereda_todo">Yo heredo normal</p>
+                <p class="usa_initial">Yo heredo forzadamente (initial)</p>
+                <p class="usa_inherit">Yo tengo valores propios (inherit)</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="error_message">Este mensaje está oculto con display none WASAAAAAA 👻</p>
+
+        <hr>
+
+        <h2 id="flexbox-avanzado">Flexbox avanzado (align-items, justify-content)</h2>
+        <div class="flexbox_avanzado_container">
+            <img src="img/miku.jpg" alt="Miku">
+            <img src="img/teto.webp" alt="Teto">
+            <img src="img/neru.jpg" alt="Neru">
+        </div>
+
+        <hr>
+
+        <h2 id="position">Position: relative, absolute, fixed, sticky</h2>
+        <div class="position_wrapper">
+            <div class="position_header position_sticky">sticky (se pega arriba al hacer scroll)</div>
+            <div class="position_container">
+                <div class="position_box position_static">static (normal)</div>
+                <div class="position_box position_relative">relative (movido 20px/30px)</div>
+                <div class="position_box position_absolute">absolute (top:50px)</div>
+                <div class="position_content">
+                    <p>Contenido largo para poder scrollear..</p>
+                    <p>Más contenido para probar...</p>
+                    <p>Continua we...</p>
+                    <p>Ya se puso el sticky?.</p>
+                    <p>El botón fixed está abajo a la derecha por cierto.</p>
+                    <p>WASAAAAAA</p>
+                    <p>Miau</p>
+                    <p>???????????</p>
+                    <p>Fin.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="position_fixed">Botón Fixed</div>
+
+        <hr>
+
+        <h2 id="flex-wrap">Flex-wrap y gap</h2>
+        <div class="flex_wrap_container">
+            <img src="img/caballerito.webp" alt="El Jolou nai">
+            <img src="img/Hornet.webp" alt="Hornet">
+            <img src="img/White-Lady.webp" alt="Dama Blanca">
+            <img src="img/Pale-King.webp" alt="Rey Pálido">
+            <img src="img/Grimm_Idle.webp" alt="Grimm">
+            <img src="img/Quirrel2.webp" alt="Quirrel">
+            <img src="img/ZoteRender.webp" alt="Zote">
+            <img src="img/Bestiary_mighty_zote_full.webp" alt="Principe Gris Zote">
+        </div>
+
+        <h2 id="flex-props">Flex-grow, flex-shrink, flex-basis</h2>
+        <div class="flex_props_container">
+            <img src="img/sandrone.webp" alt="Grow" class="flex_prop_img grow_item">
+            <img src="img/FatuiColumbina.webp" alt="Shrink" class="flex_prop_img shrink_item">
+            <img src="img/genshin-2.avif" alt="Basis" class="flex_prop_img basis_item">
+        </div>
+
+        <hr>
+
+        <h2 id="centrado">Alineación con Flexbox - Centrado Perfecto</h2>
+        <div class="centrado_perfecto">
+            <img src="img/miku.jpg" alt="Miku centrada">
+        </div>
+
+        <hr>
+
+        <h2 id="distribucion">Alineación con Flexbox - Distribución Uniforme</h2>
+        <div class="distribucion_uniforme">
+            <div class="item">Inicio</div>
+            <div class="item">Centro</div>
+            <div class="item">Final</div>
+        </div>
+
+        <hr>
+
+        <h2 id="align-self">Alineación con Flexbox - align-self</h2>
+        <div class="align_self_ejemplo">
+            <div class="item">Normal</div>
+            <div class="item especial">Especial (align-self: flex-end)</div>
+            <div class="item">Normal</div>
+        </div>
+
+        <hr>
+
+        <h2 id="multilinea">Alineación con Flexbox - Multilínea (align-content)</h2>
+        <div class="multilinea_ejemplo">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+        </div>
+
+        <hr>
+
+        <h2 id="combinacion">Alineación con Flexbox - Combinación Completa</h2>
+        <div class="combinacion_completa">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+        </div>
+
+        <hr>
+
+        <h2 id="position-demo">Position - Demostración Completa</h2>
+        <div class="position_demo_container">
+            <div class="pos_demo pos_static">Static (por defecto)</div>
+            <div class="pos_demo pos_relative">Relative (top: 20px, left: 40px)</div>
+            <div class="pos_demo pos_absolute">Absolute (top: 0, right: 0)</div>
+            <div class="pos_demo pos_fixed">Fixed (bottom: 20px, left: 20px)</div>
+            <div class="pos_demo pos_sticky">Sticky (top: 50px)</div>
+        </div>
+
+        <hr>
+
+        <h2 id="z-index">Z-index - Control de Capas</h2>
+        <div class="zindex_demo">
+            <div class="layer layer1">Capa 1 (z-index: 1)</div>
+            <div class="layer layer2">Capa 2 (z-index: 2)</div>
+            <div class="layer layer3">Capa 3 (z-index: 3)</div>
+        </div>
     </div>
-    
-    <div class="position_fixed">Botón Fixed</div>
-
-<hr>
-
-<h2 id="flex-wrap">Flex-wrap y gap</h2>
-<div class="flex_wrap_container">
-    <img src="img/caballerito.webp" alt="El Jolou nai">
-    <img src="img/Hornet.webp" alt="Hornet">
-    <img src="img/White-Lady.webp" alt="Dama Blanca">
-    <img src="img/Pale-King.webp" alt="Rey Pálido">
-    <img src="img/Grimm_Idle.webp" alt="Grimm">
-    <img src="img/Quirrel2.webp" alt="Quirrel">
-    <img src="img/ZoteRender.webp" alt="Zote">
-    <img src="img/Bestiary_mighty_zote_full.webp" alt="Principe Gris Zote">
-</div>
-
-<h2 id="flex-props">Flex-grow, flex-shrink, flex-basis</h2>
-<div class="flex_props_container">
-    <img src="img/sandrone.webp" alt="Grow" class="flex_prop_img grow_item">
-    <img src="img/FatuiColumbina.webp" alt="Shrink" class="flex_prop_img shrink_item">
-    <img src="img/genshin-2.avif" alt="Basis" class="flex_prop_img basis_item">
-</div>
-
-<hr>
-
-<h2 id="centrado">Alineación con Flexbox - Centrado Perfecto</h2>
-<div class="centrado_perfecto">
-    <img src="img/miku.jpg" alt="Miku centrada">
-</div>
-
-<hr>
-
-<h2 id="distribucion">Alineación con Flexbox - Distribución Uniforme</h2>
-<div class="distribucion_uniforme">
-    <div class="item">Inicio</div>
-    <div class="item">Centro</div>
-    <div class="item">Final</div>
-</div>
-
-<hr>
-
-<h2 id="align-self">Alineación con Flexbox - align-self</h2>
-<div class="align_self_ejemplo">
-    <div class="item">Normal</div>
-    <div class="item especial">Especial (align-self: flex-end)</div>
-    <div class="item">Normal</div>
-</div>
-
-<hr>
-
-<h2 id="multilinea">Alineación con Flexbox - Multilínea (align-content)</h2>
-<div class="multilinea_ejemplo">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
-    <div class="item">6</div>
-</div>
-
-<hr>
-
-<h2 id="combinacion">Alineación con Flexbox - Combinación Completa</h2>
-<div class="combinacion_completa">
-    <div class="item">A</div>
-    <div class="item">B</div>
-    <div class="item">C</div>
-    <div class="item">D</div>
-    <div class="item">E</div>
-    <div class="item">F</div>
-</div>
-
-<hr>
-
-<h2 id="position-demo">Position - Demostración Completa</h2>
-<div class="position_demo_container">
-    <div class="pos_demo pos_static">Static (por defecto)</div>
-    <div class="pos_demo pos_relative">Relative (top: 20px, left: 40px)</div>
-    <div class="pos_demo pos_absolute">Absolute (top: 0, right: 0)</div>
-    <div class="pos_demo pos_fixed">Fixed (bottom: 20px, left: 20px)</div>
-    <div class="pos_demo pos_sticky">Sticky (top: 50px)</div>
-</div>
-
-<hr>
-
-<h2 id="z-index">Z-index - Control de Capas</h2>
-<div class="zindex_demo">
-    <div class="layer layer1">Capa 1 (z-index: 1)</div>
-    <div class="layer layer2">Capa 2 (z-index: 2)</div>
-    <div class="layer layer3">Capa 3 (z-index: 3)</div>
-</div>
 
 </body>
 </html>
