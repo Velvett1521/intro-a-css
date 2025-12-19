@@ -1071,3 +1071,314 @@ button:hover {
         flex: 1 1 calc(20% - 12px);
     }
 }
+
+
+/* ==================== GRID PRÁCTICO ==================== */
+.gallery_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: #2a2548;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.gallery_item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.gallery_item:hover {
+    transform: translateY(-5px);
+    background-color: #e0e0e0;
+}
+
+/* ==================== FLEXBOX PLANTILLA DINÁMICA ==================== */
+.flex_layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.layout_header {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.layout_navbar {
+    background-color: #add8e6;
+    padding: 15px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.layout_main_content {
+    background-color: #90ee90;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.layout_sidebar {
+    background-color: #f0e68c;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+.layout_footer {
+    background-color: #dda0dd;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Cosas del proyecto final - Combinación Grid y Flexbox */
+.portfolio_container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main_content sidebar"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.portfolio_header {
+    grid-area: header;
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.portfolio_main_content {
+    grid-area: main_content;
+    background-color: #add8e6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.portfolio_sidebar {
+    grid-area: sidebar;
+    background-color: #90ee90;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.portfolio_footer {
+    grid-area: footer;
+    background-color: #f0e68c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Mejoras para la galería con imágenes */
+.gallery_item {
+    background-color: #3a3560;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: #f0f0f0;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery_item:hover {
+    transform: translateY(-5px);
+    background-color: #4a4461;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery_item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.gallery_item p {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #54a0ff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .gallery_item img {
+        height: 120px;
+    }
+    
+    .gallery_item p {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gallery_item img {
+        height: 130px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .gallery_item img {
+        height: 160px;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex_layout {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .layout_header {
+        flex-basis: 100%;
+    }
+    
+    .layout_navbar {
+        flex-basis: 100%;
+    }
+    
+    .layout_main_content {
+        flex: 2;
+        order: 2;
+    }
+    
+    .layout_sidebar {
+        flex: 1;
+        order: 1;
+    }
+    
+    .layout_footer {
+        flex-basis: 100%;
+        order: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio_container {
+        grid-template-areas:
+            "header"
+            "main_content"
+            "sidebar"
+            "footer";
+        grid-template-columns: 1fr;
+        gap: 15px;
+        min-height: 300px;
+    }
+    
+    .portfolio_header,
+    .portfolio_main_content,
+    .portfolio_sidebar,
+    .portfolio_footer {
+        padding: 15px;
+    }
+}
+
+
+.site_link_banner {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(135deg, #ff6b6b, #ff9ff3);
+    padding: 15px 20px;
+    border-radius: 0 25px 25px 0;
+    z-index: 9998;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border-left: 4px solid #54a0ff;
+}
+
+.site_link_banner:hover {
+    left: 10px;
+    background: linear-gradient(135deg, #ff4757, #ff7ae8);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.site_link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.site_link:hover {
+    color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .site_link_banner {
+        top: auto;
+        bottom: 100px;
+        transform: none;
+        padding: 12px 15px;
+        border-radius: 25px 25px 0 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .site_link_banner:hover {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 110px;
+    }
+    
+    .site_link {
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+}
